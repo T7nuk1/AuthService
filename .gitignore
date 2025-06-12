@@ -1,0 +1,65 @@
+# Общие файлы IDE и ОС
+.DS_Store          # macOS служебный файл
+Thumbs.db          # Кэш превью Windows
+*.user             # Файлы настроек пользователя VS
+*.suo              # Настройки решения VS
+.vs/               # Папка Visual Studio
+.idea/             # Папка Rider/IntelliJ
+.vscode/           # Настройки VS Code
+*.swp              # Временные файлы редакторов
+
+# Сборки и бинарные файлы
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.pdb
+*.cache
+
+# Файлы пакетов
+packages/
+*.nupkg
+
+# Локальные настройки
+appsettings.Development.json
+appsettings.Local.json
+
+# Базы данных и миграции
+*.db
+*.sqlite
+/migrations/       # Исключаем миграции (их нужно коммитить!)
+/Data/Migrations/  # Альтернативный путь (если используется)
+
+# Docker
+docker-compose.override.yml
+
+# Тестовые результаты
+TestResults/
+*.trx
+
+# Логи и временные файды
+*.log
+*.tmp
+*.bak
+
+# NuGet
+.nuget/
+NuGet.config
+
+# Фронтенд (если будет)
+node_modules/
+dist/
+*.js.map
+*.css.map
+
+# Rider специфичные файлы
+_ReSharper.*
+*.sln.iml
+
+# VS Code специфичные файлы
+.history/
+*.code-workspace
+
+# Postgres (если используете локальные данные)
+/pgdata/
