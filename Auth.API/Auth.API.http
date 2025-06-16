@@ -1,6 +1,17 @@
 @Auth.API_HostAddress = http://localhost:5283
 
-GET {{Auth.API_HostAddress}}/weatherforecast/
+GET {{Auth.API_HostAddress}}/authforecast?login=wrong&password=person
 Accept: application/json
+###
 
+GET {{Auth.API_HostAddress}}/authforecast?login=cat&password=Qwerty1234
+Accept: application/json
+###
+
+GET {{Auth.API_HostAddress}}/registrationforecast?name=Maxim&login=cat&password=Qwerty1234&email=torgtorg8192@gmail.com
+Accept: application/json
+###
+
+GET {{Auth.API_HostAddress}}/registrationforecast?name=Zhenya&login=dog&password=Asdfgh1234&email=ugolnikov@gmail.com
+Accept: application/json
 ###
