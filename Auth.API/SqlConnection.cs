@@ -4,19 +4,19 @@ namespace Auth.API
 {
     public class SqlConnection
     {
-        private static MySqlConnection _connection;
-        public static void CreateConnection()
+        private MySqlConnection _connection;
+        public SqlConnection(string connectionString)
         {
-            _connection = new MySqlConnection("Server=localhost;User ID=root;Password=admin;Database=mservices");
+            _connection = new MySqlConnection(connectionString);
             _connection.Open();
         }
 
-        public static bool CheckAuthorization(string login, string password)
+        public bool CheckAuthorization(User user)
         {
             var command = _connection.CreateCommand();
             command.CommandText = "SELECT COUNT(*) FROM users WHERE login = @login AND password = @password";
-            command.Parameters.AddWithValue("login", login);
-            command.Parameters.AddWithValue("password", password);
+            command.Parameters.AddWithValue("login", user.Login);
+            command.Parameters.AddWithValue("password", user.Password);
 
             if ((long)command.ExecuteScalar() > 0)
                 return true;
@@ -24,7 +24,7 @@ namespace Auth.API
                 return false;
         }
 
-        public static bool CreateUser(User newUser)
+        public bool CreateUser(User newUser)
         {
             var command = _connection.CreateCommand();
             command.CommandText = @"INSERT INTO users (name, login, password, email) VALUES
@@ -55,6 +55,12 @@ namespace Auth.API
             Login = login;
             Password = password;
             Email = email;
+        }
+
+        public User(string login, string password)
+        {
+            Login = login;
+            Password = password;
         }
     }
 }

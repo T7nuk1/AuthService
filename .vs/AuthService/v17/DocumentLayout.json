@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Azerty\\Desktop\\AuthService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D77236F-3F3E-E1FC-A653-90CEBBA82EC5}|Auth.Infrastructure\\Auth.Infrastructure.csproj|c:\\users\\azerty\\desktop\\authservice\\auth.infrastructure\\auth.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3D77236F-3F3E-E1FC-A653-90CEBBA82EC5}|Auth.Infrastructure\\Auth.Infrastructure.csproj|solutionrelative:auth.infrastructure\\auth.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8462217A-8807-4743-AE4C-72A168C84C3F}|Auth.API\\Auth.API.csproj|c:\\users\\azerty\\desktop\\authservice\\auth.api\\sqlconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8462217A-8807-4743-AE4C-72A168C84C3F}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\sqlconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8462217A-8807-4743-AE4C-72A168C84C3F}|Auth.API\\Auth.API.csproj|c:\\users\\azerty\\desktop\\authservice\\auth.api\\auth.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8462217A-8807-4743-AE4C-72A168C84C3F}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\auth.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8462217A-8807-4743-AE4C-72A168C84C3F}|Auth.API\\Auth.API.csproj|c:\\users\\azerty\\desktop\\authservice\\auth.api\\auth.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{8462217A-8807-4743-AE4C-72A168C84C3F}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\auth.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8462217A-8807-4743-AE4C-72A168C84C3F}|Auth.API\\Auth.API.csproj|c:\\users\\azerty\\desktop\\authservice\\auth.api\\httpshooker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8462217A-8807-4743-AE4C-72A168C84C3F}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\httpshooker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Auth.Infrastructure",
+              "DocumentMoniker": "C:\\Users\\Azerty\\Desktop\\AuthService\\Auth.Infrastructure\\Auth.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Auth.Infrastructure\\Auth.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\Azerty\\Desktop\\AuthService\\Auth.Infrastructure\\Auth.Infrastructure.csproj",
+              "RelativeToolTip": "Auth.Infrastructure\\Auth.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-17T11:36:11.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SqlConnection.cs",
+              "DocumentMoniker": "C:\\Users\\Azerty\\Desktop\\AuthService\\Auth.API\\SqlConnection.cs",
+              "RelativeDocumentMoniker": "Auth.API\\SqlConnection.cs",
+              "ToolTip": "C:\\Users\\Azerty\\Desktop\\AuthService\\Auth.API\\SqlConnection.cs",
+              "RelativeToolTip": "Auth.API\\SqlConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T11:33:59.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Auth.API",
+              "DocumentMoniker": "C:\\Users\\Azerty\\Desktop\\AuthService\\Auth.API\\Auth.API.csproj",
+              "RelativeDocumentMoniker": "Auth.API\\Auth.API.csproj",
+              "ToolTip": "C:\\Users\\Azerty\\Desktop\\AuthService\\Auth.API\\Auth.API.csproj",
+              "RelativeToolTip": "Auth.API\\Auth.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-17T11:21:50.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Auth.API.http",
+              "DocumentMoniker": "C:\\Users\\Azerty\\Desktop\\AuthService\\Auth.API\\Auth.API.http",
+              "RelativeDocumentMoniker": "Auth.API\\Auth.API.http",
+              "ToolTip": "C:\\Users\\Azerty\\Desktop\\AuthService\\Auth.API\\Auth.API.http",
+              "RelativeToolTip": "Auth.API\\Auth.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-12T13:23:54.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HttpsHooker.cs",
+              "DocumentMoniker": "C:\\Users\\Azerty\\Desktop\\AuthService\\Auth.API\\HttpsHooker.cs",
+              "RelativeDocumentMoniker": "Auth.API\\HttpsHooker.cs",
+              "ToolTip": "C:\\Users\\Azerty\\Desktop\\AuthService\\Auth.API\\HttpsHooker.cs",
+              "RelativeToolTip": "Auth.API\\HttpsHooker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T12:21:33.241Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
