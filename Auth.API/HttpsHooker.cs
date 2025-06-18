@@ -1,5 +1,4 @@
-using Auth.API;
-using Microsoft.AspNetCore.Authentication.OAuth;
+using Auth.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -8,14 +7,7 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-// Creating Config variable
-var developmentConfig = new ConfigurationBuilder().AddJsonFile("appsettings.Development.json").Build();
-
-// Creating MySQL connection variable
-var connectionString = developmentConfig.GetSection("Data")["DefaultConnection"];
-if (connectionString == null)
-    return;
-SqlConnection sql = new SqlConnection(connectionString);
+Logic logic = new Logic();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -27,42 +19,14 @@ app.UseHttpsRedirection();
 
 app.MapGet("/authforecast", (HttpRequest request) =>
 {
-    User authUser = new User(
-        login: request.Query["login"],
-        password: request.Query["password"]
-        );
-
-    var forecast = new AuthorizationForecast(
-            authUser: authUser,
-            successState: sql.CheckAuthorization(authUser)
-        );
-    return forecast;
+    return logic.CheckAuthorization(request);
 })
 .WithName("AuthForecast");
 
-app.MapGet("/registrationforecast", (HttpRequest request) =>
+app.MapPut("/registrationforecast", (HttpRequest request) =>
 {
-    User newUser = new User(
-        name: request.Query["name"],
-        login: request.Query["login"],
-        password: request.Query["password"],
-        email: request.Query["email"]
-        );
-
-    var forecast = new CreateUserForecast(
-        newUser: newUser,
-        successState: sql.CreateUser(newUser)
-        );
-    return forecast;
+    return logic.CreateUser(request);
 })
 .WithName("RegistrationForecast");
 
 app.Run();
-
-record AuthorizationForecast(User authUser, bool successState)
-{
-}
-
-record CreateUserForecast(User newUser, bool successState)
-{
-}

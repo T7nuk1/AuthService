@@ -1,6 +1,6 @@
 ﻿using MySqlConnector;
 
-namespace Auth.API
+namespace Auth.Infrastructure
 {
     public class SqlConnection
     {
