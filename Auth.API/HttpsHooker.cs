@@ -1,11 +1,14 @@
 using Auth.Core;
 
-var builder = WebApplication.CreateBuilder(args);
+var appBuilder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+appBuilder.Services.AddOpenApi();
+S
+var app = appBuilder.Build();
 
-var app = builder.Build();
+var loggerFactory = LoggerFactory.Create(builder => builder.AddConsole());
+ILogger logger = loggerFactory.CreateLogger("HttpsHooker");
 
 Logic logic = new Logic();
 
@@ -19,12 +22,14 @@ app.UseHttpsRedirection();
 
 app.MapGet("/authforecast", (HttpRequest request) =>
 {
+    logger.LogInformation("Requested Path: {Path}", request.Path);
     return logic.CheckAuthorization(request);
 })
 .WithName("AuthForecast");
 
 app.MapPut("/registrationforecast", (HttpRequest request) =>
 {
+    logger.LogInformation("Requested Path: {Path}", request.Path);
     return logic.CreateUser(request);
 })
 .WithName("RegistrationForecast");

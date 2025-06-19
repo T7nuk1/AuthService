@@ -18,7 +18,8 @@ namespace Auth.Infrastructure
             command.Parameters.AddWithValue("login", user.Login);
             command.Parameters.AddWithValue("password", user.Password);
 
-            if ((long)command.ExecuteScalar() > 0)
+            var result = command.ExecuteScalar();
+            if (result != null && (long)result > 0)
                 return true;
             else
                 return false;
@@ -43,10 +44,10 @@ namespace Auth.Infrastructure
 
     public class User
     {
-        public string Name { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
-        public string Email { get; set; }
+        public string? Name { get; set; }
+        public string? Login { get; set; }
+        public string? Password { get; set; }
+        public string? Email { get; set; }
 
         public User(string name, string login, string password,
             string email)

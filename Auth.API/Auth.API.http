@@ -15,3 +15,7 @@ Accept: application/json
 PUT {{Auth.API_HostAddress}}/registrationforecast?name=Zhenya&login=dog&password=Asdfgh1234&email=ugolnikov@gmail.com
 Accept: application/json
 ###
+
+PUT {{Auth.API_HostAddress}}/registrationforecast?name=Bot&login=matrix&password=secret&email=test@gmail.com
+Accept: application/json
+###
